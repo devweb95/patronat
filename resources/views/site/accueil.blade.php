@@ -3,15 +3,7 @@
 @section('title', 'PATRONAT | Homepage')
 
 @section('content')
-    <!-- Votre contenu HTML principal -->
-     <!--Form Back Drop-->
 
- 	
-    <!-- Preloader -->
-    <!--<div class="preloader"></div>-->
- 	
-    <!-- Main Header-->
-	<!-- Banner Section Two -->
     <section class="banner-section-two" style="background-image:url(images/main-slider/2.jpg)">
 		<div class="left-side">
 			<div class="icon-image"></div>
