@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <section class="banner-section-two" style="background-image:url(images/main-slider/2.jpg)">
+    <section class="banner-section-two" style="background-image:url(images/main-slider/3.jpg)">
 		<div class="left-side">
 			<div class="icon-image"></div>
 		</div>
