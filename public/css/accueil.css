@@ -1,0 +1,261 @@
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Ou plus spécifique */
+.logo-box .logo img {
+    max-width: 180px;
+    height: auto;
+}
+.banner-section-two {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-attachment: fixed; /* Optionnel: effet parallax */
+    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+    position: relative;
+}
+
+/* Overlay pour améliorer la lisibilité du texte */
+.banner-section-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Overlay sombre léger */
+    z-index: 1;
+}
+
+/* S'assurer que le contenu est au-dessus de l'overlay */
+.banner-section-two .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* 2. Styles pour les images du slider avec radius et ombre */
+/* .image-column .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.image-column .image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+} */
+
+/* 3. Effet 3D au survol */
+.image-column .image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.image-column .image:hover img {
+    transform: scale(1.05);
+}
+
+/* 4. Effet 3D avec perspective */
+.image-column .image {
+    perspective: 1000px;
+}
+
+.image-column .image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(0,0,0,0.1) 100%);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-column .image:hover::after {
+    opacity: 1;
+}
+
+/* 5. Amélioration du contenu texte */
+.content-column .inner-column {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content-column .inner-column h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-column .inner-column .text {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* 6. Bouton avec effet 3D */
+.theme-btn.btn-style-one {
+    background: linear-gradient(45deg, #927111, #dfad1a);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-btn.btn-style-one::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.theme-btn.btn-style-one:hover::before {
+    left: 100%;
+}
+
+.theme-btn.btn-style-one:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(52, 152, 219, 0.4);
+}
+
+/* 7. Animation pour le carousel */
+.owl-carousel .owl-item {
+    transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.owl-carousel .owl-item:not(.active) {
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+
+/* 8. Responsive */
+@media (max-width: 768px) {
+    .banner-section-two {
+        min-height: 80vh;
+        background-attachment: scroll; /* Évite les problèmes sur mobile */
+    }
+    
+    .image-column .image img {
+        max-height: 250px;
+    }
+    
+    .content-column .inner-column {
+        padding: 30px 15px;
+        margin-top: 20px;
+    }
+}
+
+/* 9. Animation d'entrée */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* 10. Effet de brillance sur les images */
+.image-column .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-column .image::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.image-column .image:hover::before {
+    opacity: 1;
+    animation: shine 0.6s ease-out;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+
+/* Rend chaque carte (inner-box) flexible verticalement, avec 100% de hauteur disponible */
+.news-block .inner-box {
+  display: flex;                /* Active le modèle Flexbox pour un agencement en colonne */
+  flex-direction: column;       /* Aligne les enfants (image + contenu) de haut en bas */
+  height: 100%;                 /* Prend toute la hauteur du parent .news-block */
+}
+
+/* Fixe une hauteur constante pour la zone d’image */
+.news-block .image {
+  height: 220px;                /* Hauteur fixe pour toutes les images */
+  overflow: hidden;             /* Cache toute partie de l’image qui dépasse cette hauteur */
+}
+
+/* Rend l’image responsive et bien cadrée */
+.news-block .image img {
+  width: 100%;                  /* L’image prend toute la largeur du conteneur */
+  height: 100%;                 /* L’image prend toute la hauteur définie ci-dessus */
+  object-fit: cover;            /* L’image remplit l’espace sans se déformer (recadrage possible) */
+}
+
+/* Fait en sorte que le bas de la carte (titre + bouton) prenne le reste de la place */
+.news-block .lower-content {
+  flex-grow: 1;                 /* Prend tout l’espace vertical restant après l’image */
+  padding: 20px;                /* Espacement intérieur pour respirer */
+  display: flex;                /* Active Flexbox pour ce bloc aussi */
+  flex-direction: column;       /* Organisation verticale */
+  justify-content: space-between; /* Répartit les éléments (métadonnées, titre, bouton) avec un bon espacement */
+}
+
+/* Permet au titre de prendre toute la place disponible dans le bloc */
+.news-block h5 {
+  flex-grow: 1;                 /* Le titre s'étend pour occuper l'espace vertical disponible */
+  margin-bottom: 15px;          /* Espace entre le titre et le bouton "Voir plus" */
+}

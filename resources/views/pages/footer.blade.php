@@ -12,13 +12,13 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+										<a href="index.html"><img src="{{asset('images/logoheader.png')}}" alt="" /></a>
 									</div>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+									<div class="text">Porte-voix du secteur privé, le CNPB œuvre pour la représentation, le dialogue public-privé, le renforcement des capacités des entreprises et la promotion d’un environnement économique favorable.</div>
 									<ul class="list-style-three">
-										<li><span class="icon fa fa-phone"></span> +123 (4567) 890</li>
-										<li><span class="icon fa fa-envelope"></span> info@lawsight.com</li>
-										<li><span class="icon fa fa-home"></span>380 St Kilda Road, Melbourne <br> VIC 3004, Australia</li>
+										<li><span class="icon fa fa-phone"></span> (+226) 25 33 03 09</li>
+										<li><span class="icon fa fa-envelope"></span> contact@patronat.bf</li>
+										<li><span class="icon fa fa-home"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
 									</ul>
 								</div>
 							</div>
@@ -26,14 +26,14 @@
 							<!--Footer Column-->
                             <div class="footer-column col-lg-5 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-									<h4>Links</h4>
+									<h4>Liens</h4>
 									<ul class="list-link">
-										<li><a href="">Home</a></li>
+										<li><a href="">Accueil</a></li>
+										<li><a href="">A propos</a></li>
 										<li><a href="">Services</a></li>
-										<li><a href="">About us</a></li>
-										<li><a href="">Testimonials</a></li>
-										<li><a href="">News</a></li>
-										<li><a href="">Contact</a></li>
+										<li><a href="">Portfolio</a></li>
+										<li><a href="">Articles</a></li>
+										<li><a href="">Contactez nous</a></li>
 									</ul>
 								</div>
 							</div>
@@ -51,11 +51,11 @@
 									<h4>Support</h4>
 									<ul class="list-link">
 										<li><a href="">Contact Us</a></li>
-										<li><a href="">Submit a Ticket</a></li>
-										<li><a href="">Visit Knowledge Base</a></li>
+										<!-- <li><a href="">Submit a Ticket</a></li>
+										<li><a href="">Visit Knowledge Base</a></li> -->
 										<li><a href="">Support System</a></li>
-										<li><a href="">Refund Policy</a></li>
-										<li><a href="">Professional Services</a></li>
+										<li><a href="">Politiques de confidentialité</a></li>
+										<li><a href="">Services Professionel </a></li>
 									</ul>
 								</div>
 							</div>
@@ -63,7 +63,7 @@
 							<!--Footer Column-->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget gallery-widget">
-									<h4>Gallery</h4>
+									<h4>Gallerie</h4>
 									<div class="widget-content">
 										<div class="images-outer clearfix">
 											<!--Image Box-->
@@ -97,7 +97,7 @@
 					
 					<!-- Copyright Column -->
 					<div class="copyright-column col-lg-6 col-md-6 col-sm-12">
-						<div class="copyright">2019 &copy; All rights reserved by <a href="#">Themexriver</a></div>
+						<div class="copyright">2025 &copy; Tous droits réservés par <a href="#">Jofedigital</a></div>
 					</div>
 					
 					<!-- Social Column -->
