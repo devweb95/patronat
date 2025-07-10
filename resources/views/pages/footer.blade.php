@@ -14,12 +14,12 @@
 									<div class="logo">
 										<a href="index.html"><img src="{{asset('images/logoheader.png')}}" alt="" /></a>
 									</div>
-									<div class="text">Porte-voix du secteur privé, le CNPB œuvre pour la représentation, le dialogue public-privé, le renforcement des capacités des entreprises et la promotion d’un environnement économique favorable.</div>
-									<ul class="list-style-three">
+									<div class="text">Porte-voix du secteur privé, le COGEF œuvre pour la représentation, le dialogue public-privé, le renforcement des capacités des entreprises et la promotion d’un environnement économique favorable.</div>
+									<!-- <ul class="list-style-three">
 										<li><span class="icon fa fa-phone"></span> (+226) 25 33 03 09</li>
 										<li><span class="icon fa fa-envelope"></span> contact@patronat.bf</li>
 										<li><span class="icon fa fa-home"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 							
@@ -66,18 +66,23 @@
 									<h4>Gallerie</h4>
 									<div class="widget-content">
 										<div class="images-outer clearfix">
-											<!--Image Box-->
+											<ul class="list-style-three">
+												<li><span class="icon fa fa-phone"></span> (+226) 25 33 03 09</li>
+												<li><span class="icon fa fa-envelope"></span> contact@patronat.bf</li>
+												<li><span class="icon fa fa-home"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
+											</ul>
+											<!-- 
 											<figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-1.jpg" alt=""></a></figure>
-											<!--Image Box-->
+											
 											<figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-2.jpg" alt=""></a></figure>
-											<!--Image Box-->
+											
 											<figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-3.jpg" alt=""></a></figure>
-											<!--Image Box-->
+											
 											<figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-4.jpg" alt=""></a></figure>
-											<!--Image Box-->
+											
 											<figure class="image-box"><a href="images/gallery/5.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-5.jpg" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a href="images/gallery/6.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-6.jpg" alt=""></a></figure>
+										
+											<figure class="image-box"><a href="images/gallery/6.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-6.jpg" alt=""></a></figure> --> 
 										</div>
 									</div>
 								</div>

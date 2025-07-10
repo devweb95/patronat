@@ -23,8 +23,8 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<h2>Conseil <br> National du <br> Patronat Burkinabè</h2>
-								<div class="text">Les instances statutaires du CNPB <br> et le président du Faso. </div>
+								<h2>Conférence Générale<span> des Entreprises du Burkina</span></h2>
+								<div class="text">Les instances statutaires du COGEF <br> et le président du Faso. </div>
 								<a href="#" class="theme-btn btn-style-one">Contactez nous</a>
 							</div>
 						</div>
@@ -43,8 +43,8 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<h2>Conseil <br> National du <br> Patronat Burkinabè</h2>
-								<div class="text">Le CNPB, l'organisation faitiere <br> des employeurs du <br> Burkina Faso.</div>
+								<h2>Conférence Générale<span> des Entreprises du Burkina</span></h2>
+								<div class="text">Le COGEF, l'organisation faitiere <br> des employeurs du <br> Burkina Faso.</div>
 								<a href="#" class="theme-btn btn-style-one">Contactez nous</a>
 							</div>
 						</div>
@@ -63,7 +63,7 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<h2>Conseil <br> National du <br> Patronat Burkinabè</h2>
+								<h2>Conférence Générale<span> des Entreprises du Burkina</span></h2>
 								<div class="text">Le cadre d'actions en faveur<br> du secteur privé Burkinabè:</div>
 								<a href="#" class="theme-btn btn-style-one">Contactez nous</a>
 							</div>
@@ -142,11 +142,11 @@
 						<!-- Sec Title -->
 						<div class="section-title">
 							<div class="title">A propos de nous</div>
-							<h3>Conseil National du Patronat<span> Burkinabè</span></h3>
+							<h3>Conférence Générale<span> des Entreprises du Burkina</span></h3>
 						</div>
 						
 						<div class="text">
-							<p>Le CNPB est un cadre d'actions, de représentation, de coordination, de liaison et d'information en faveur du secteur privé dans son ensemble.
+							<p>Le COGEF est un cadre d'actions, de représentation, de coordination, de liaison et d'information en faveur du secteur privé dans son ensemble.
 								Il constitue une force solidaire, une force de représentation, de proposition, de négociaton et de services.</p>
 							<!-- <p>Aenean tincidunt id mauris id auctor. Donec at ligula lacus. Nulla dignissim mi quis neque interdum, quis porta sem finibus.</p> -->
 						</div>
@@ -452,7 +452,7 @@
                 <div class="inner-column clearfix">
                     
                     <div class="image">
-                        <img src="{{ asset('images/resource/about-2.jpg') }}" alt="CNPB Experience"/>
+                        <img src="{{ asset('images/resource/about-2.jpg') }}" alt="COGEF Experience"/>
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
@@ -485,7 +485,7 @@
 				<!-- Testimonial Block Two -->
 				<div class="testimonial-block-two">
 					<div class="inner-box">
-						<div class="text">Grâce à l'accompagnement du CNPB, notre entreprise a pu accéder à des opportunités de financement inédites. Leur réseau et leur appui nous ont permis de passer un cap stratégique. </div>
+						<div class="text">Grâce à l'accompagnement du COGEF, notre entreprise a pu accéder à des opportunités de financement inédites. Leur réseau et leur appui nous ont permis de passer un cap stratégique. </div>
 						<div class="author-post">
 							<div class="author-inner">
 								<div class="image"><img src="{{asset('images/resource/autrice2.png')}}" alt="" /></div>
@@ -499,7 +499,7 @@
 				<!-- Testimonial Block Two -->
 				<div class="testimonial-block-two">
 					<div class="inner-box">
-						<div class="text">Les formations proposées par le CNPB ont considérablement renforcé les compétences de notre équipe en gestion financière et ressources humaines. Un vrai levier de croissance pour les PME. </div>
+						<div class="text">Les formations proposées par le COGEF ont considérablement renforcé les compétences de notre équipe en gestion financière et ressources humaines. Un vrai levier de croissance pour les PME. </div>
 						<div class="author-post">
 							<div class="author-inner">
 								<div class="image"><img src="{{asset('images/resource/autrice1.png')}}" alt="" /></div>
@@ -513,7 +513,7 @@
 				<!-- Testimonial Block Two -->
 				<div class="testimonial-block-two">
 					<div class="inner-box">
-						<div class="text">Le CNPB joue un rôle clé dans la défense des intérêts du secteur privé. Leur capacité à dialoguer avec les pouvoirs publics a facilité la résolution d'un conflit fiscal majeur pour notre structure. </div>
+						<div class="text">Le COGEF joue un rôle clé dans la défense des intérêts du secteur privé. Leur capacité à dialoguer avec les pouvoirs publics a facilité la résolution d'un conflit fiscal majeur pour notre structure. </div>
 						<div class="author-post">
 							<div class="author-inner">
 								<div class="image"><img src="{{asset('images/resource/auteur1.png')}}" alt="" /></div>
@@ -527,7 +527,7 @@
 				<!-- Testimonial Block Two -->
 				<div class="testimonial-block-two">
 					<div class="inner-box">
-						<div class="text">Nous avons bénéficié d'une assistance juridique rapide et efficace grâce au CNPB. Leur service de médiation a permis d'éviter un long contentieux avec un partenaire local. </div>
+						<div class="text">Nous avons bénéficié d'une assistance juridique rapide et efficace grâce au COGEF. Leur service de médiation a permis d'éviter un long contentieux avec un partenaire local. </div>
 						<div class="author-post">
 							<div class="author-inner">
 								<div class="image"><img src="{{asset('images/resource/auteur2.png')}}" alt="" /></div>

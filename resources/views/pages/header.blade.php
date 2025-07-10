@@ -27,7 +27,7 @@
 
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Accueil</a>
+                                    <li><a href="{{ route('accueil') }}">Accueil</a>
                                         <!-- <ul>
                                             <li><a href="index.html">Home Page 01</a></li>
                                             <li><a href="index-2.html">Home Page 02</a></li>
@@ -35,17 +35,17 @@
                                     </li>
                                       <li class="dropdown"><a href="#">CNPB</a>
                                         <ul>
-                                            <li><a href="about.html">Le CNPB</a></li>
-                                            <li><a href="testimonial.html">Le mot du président</a></li>
+                                            <li><a href="#">Le CNPB</a></li>
+                                            <li><a href="#">Le mot du président</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Actualités</a>
+                                    <li><a href="{{ route('actualités') }}">Actualités</a>
                                         <!--<ul>
                                             <li><a href="blog-list.html">Blog List</a></li>
                                             <li><a href="blog-single.html">Blog Single</a></li>
                                         </ul>-->
                                     </li>
-                                    <li class="dropdown"><a href="#">Services</a>
+                                    <li><a href="{{ route('services') }}">Services</a>
                                         <!-- <ul>
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="services-detail.html">Services Detail</a></li>
@@ -65,8 +65,8 @@
                                                     <li><a href="#">Actualités PAFPA</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="services-detail.html">PACAJEF</a></li>
-                                            <li><a href="services-detail.html">RIPAQUE</a></li>
+                                            <li><a href="#">PACAJEF</a></li>
+                                            <li><a href="#">RIPAQUE</a></li>
                                         </ul>
                                     </li>
                                     <!-- <li class="dropdown"><a href="#">A propos</a>
@@ -84,7 +84,7 @@
                                         </ul> -->
                                     </li>
                                     
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact</a></li>
                                 </ul>
                             </div>
 
@@ -101,7 +101,7 @@
                                             <div class="form-container">
                                                 <form method="post" action="blog.html">
                                                 <div class="form-group">
-                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                    <input type="search" name="field-name" value="" placeholder="Recherche" required>
                                                     <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
                                                 </div>
                                                 </form>
@@ -140,7 +140,7 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Accueil</a>
+                                    <li><a href="{{ route('accueil') }}">Accueil</a>
                                         <!-- <ul>
                                             <li><a href="index.html">Home Page 01</a></li>
                                             <li><a href="index-2.html">Home Page 02</a></li>
@@ -148,17 +148,17 @@
                                     </li>
                                       <li class="dropdown"><a href="#">CNPB</a>
                                         <ul>
-                                            <li><a href="about.html">Le CNPB</a></li>
-                                            <li><a href="testimonial.html">Le mot du président</a></li>
+                                            <li><a href="#">Le CNPB</a></li>
+                                            <li><a href="#">Le mot du président</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Actualités</a>
+                                    <li><a href="{{ route('actualités') }}">Actualités</a>
                                         <!--<ul>
                                             <li><a href="blog-list.html">Blog List</a></li>
                                             <li><a href="blog-single.html">Blog Single</a></li>
                                         </ul>-->
                                     </li>
-                                    <li class="dropdown"><a href="#">Services</a>
+                                    <li><a href="{{ route('services') }}">Services</a>
                                         <!-- <ul>
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="services-detail.html">Services Detail</a></li>
@@ -172,14 +172,14 @@
                                     </li>
                                     <li class="dropdown"><a href="#">Projets</a>
                                         <ul>
-                                            <li class="dropdown"><a href="services.html">PAFPA</a>
+                                            <li class="dropdown"><a href="#">PAFPA</a>
                                                 <ul>
                                                     <li><a href="#">Le PAFPA</a></li>
                                                     <li><a href="#">Actualités PAFPA</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="services-detail.html">PACAJEF</a></li>
-                                            <li><a href="services-detail.html">RIPAQUE</a></li>
+                                            <li><a href="#">PACAJEF</a></li>
+                                            <li><a href="#">RIPAQUE</a></li>
                                         </ul>
                                     </li>
                                     <!-- <li class="dropdown"><a href="#">A propos</a>
@@ -197,7 +197,7 @@
                                         </ul> -->
                                     </li>
                                     
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact</a></li>
                                 </ul>
                             </div>
                     </nav><!-- Main Menu End-->
