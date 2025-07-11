@@ -11,7 +11,7 @@
                 <div class="content">
                     <h1>Publicités</h1>
                     <ul class="page-breadcrumb">
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Accueil</a></li>
                         <li>Publicités</li>
                     </ul>
                 </div>
