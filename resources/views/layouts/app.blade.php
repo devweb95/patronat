@@ -17,6 +17,9 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('css/accueil.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/pub.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/projet.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/adhesion.css') }}" rel="stylesheet" >
     
     <!-- Additional CSS -->
     @stack('styles')
@@ -52,6 +55,8 @@
     <script src="{{ asset('js/validate.js') }}"></script>
     <script src="{{ asset('js/jquery-ui.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/pub.js') }}"></script>
+    <script src="{{ asset('js/projet.js') }}"></script>
     
     <!-- Google Maps API -->
     <script src="https://maps.google.com/maps/api/js?key={{ config('services.google.maps_api_key') }}"></script>

@@ -13,7 +13,7 @@
 		<div class="hidden-bar-wrapper">
 		<div class="inner-box">
 		<div class="logo">
-		<a href="index.html"><img src="images/sidebar-logo.png" alt="" /></a>
+		<a href="#"><img src="images/sidebar-logo.png" alt="" /></a>
 		</div>
 		<div class="text">Lorem ipsum, or lipsum as it is sometimes the known, is dummy text used in laying out print, graphic or web designs. The passage</div>
 		
@@ -38,12 +38,12 @@
 
 	
 	<!--Page Title-->
-    <section class="page-title" style="background-image:url({{ asset('images/service/services_breadcumb.jpg') }})">
+    <section class="page-title" style="background-image:url({{ asset('images/service/services_breadcumb.jpg') }});height: 70vh;background-size: cover; background-position: center; background-repeat: no-repeat;">
     	<div class="container">
 			<div class="content">
 				<h1>Services</h1>
 				<ul class="page-breadcrumb">
-					<li><a href="index.html">Accueil</a></li>
+					<li><a href="#">Accueil</a></li>
 					<li>Services</li>
 				</ul>
 			</div>
@@ -68,8 +68,8 @@
 							<span class="icon flaticon-internet"></span>
 						</div>
 						<h3>Formation</h3>
-						<div class="text" style="height: 150px">Organisation de sessions de renforcement de capacités pour améliorer les compétences techniques et managériales des acteurs du secteur privé.</div>
-						<div class="overlay-box" style="background-image: url({{ asset('images/service/formation.jpg') }}) ; background-size: cover; background-position: center;">
+						<div class="text" style="height: 150px ; background-size: cover; background-position: center;">Organisation de sessions de renforcement de capacités pour améliorer les compétences techniques et managériales des acteurs du secteur privé.</div>
+						<div class="overlay-box" style="background-image: url({{ asset('images/service/formation.jpg') }}) ">
 							<div class="overlay-inner">
 								<div class="content">
 									<span class="icon flaticon-internet"></span>
@@ -108,8 +108,8 @@
 							<span class="icon flaticon-gun"></span>
 						</div>
 						<h3>Réalisation d'études et d'enquêtes</h3>
-						<div class="text" style="height: 150px">Conception et mise en œuvre d'études économiques, sectorielles ou sociales pour orienter les stratégies du secteur privé.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/etude.jpg')}});background-size: cover; background-position: center;">
+						<div class="text" style="height: 120px;background-size: cover; background-position: center;">Conception et mise en œuvre d'études économiques, sectorielles ou sociales pour orienter les stratégies du secteur privé.</div>
+						<div class="overlay-box" style="background-image: url({{asset('images/service/etude.jpg')}});">
 							<div class="overlay-inner">
 								<div class="content">
 									<span class="icon flaticon-gun"></span>
@@ -128,8 +128,8 @@
 							<span class="icon flaticon-plan"></span>
 						</div>
 						<h3>Assistance, conseil et orientation des membres</h3>
-						<div class="text" style="height: 150px">Appui personnalisé aux entreprises membres en matière de gestion, fiscalité, droit du travail, démarches administratives.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/assistance.jpg')}});background-size: cover; background-position: center;">
+						<div class="text" style="height: 120px ;background-size: cover; background-position: center">Appui personnalisé aux entreprises membres en matière de gestion, fiscalité, droit du travail, démarches administratives.</div>
+						<div class="overlay-box" style="background-image: url({{asset('images/service/assistance.jpg')}})">
 							<div class="overlay-inner">
 								<div class="content">
 									<span class="icon flaticon-plan"></span>
@@ -148,8 +148,8 @@
 							<span class="icon flaticon-book"></span>
 						</div>
 						<h3>Recherche de financements et de partenariats</h3>
-						<div class="text" style="height: 150px">Soutien à l'identification d'opportunités de financement et de collaboration avec des partenaires techniques ou financiers.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/financement2.jpg')}});background-size: cover; background-position: center;">
+						<div class="text" style="height: 100px;background-size: cover; background-position: center;">Soutien à l'identification d'opportunités de financement et de collaboration avec des partenaires techniques ou financiers.</div>
+						<div class="overlay-box" style="background-image: url({{asset('images/service/financement2.jpg')}});">
 							<div class="overlay-inner">
 								<div class="content">
 									<span class="icon flaticon-book"></span>
@@ -168,8 +168,8 @@
 							<span class="icon flaticon-house-outline"></span>
 						</div>
 						<h3>Lobbying et plaidoyer</h3>
-						<div class="text" style="height: 150px">Actions d'influence pour faire évoluer les politiques publiques en faveur d'un environnement des affaires plus favorable.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/plaidoyer.jpg')}});background-size: cover; background-position: center;">
+						<div class="text" style="height: 150px;background-size: cover; background-position: center;">Actions d'influence pour faire évoluer les politiques publiques en faveur d'un environnement des affaires plus favorable.</div>
+						<div class="overlay-box" style="background-image: url({{asset('images/service/plaidoyer.jpg')}});">
 							<div class="overlay-inner">
 								<div class="content">
 									<span class="icon flaticon-house-outline"></span>
@@ -187,7 +187,7 @@
 							<span class="icon flaticon-house-outline"></span>
 						</div>
 						<h3>Médiation</h3>
-						<div class="text" style="height: 150px">Intervention dans la résolution amiable des différends entre acteurs économiques ou entre entreprises et administrations.</div>
+						<div class="text" style="height: 150px ;background-size: cover; background-position: center">Intervention dans la résolution amiable des différends entre acteurs économiques ou entre entreprises et administrations.</div>
 						<div class="overlay-box" style="background-image: url({{asset('images/service/mediation.jpg')}});background-size: cover; background-position: center;">
 							<div class="overlay-inner">
 								<div class="content">
@@ -206,7 +206,7 @@
 							<span class="icon flaticon-house-outline"></span>
 						</div>
 						<h3>Négociation collective</h3>
-						<div class="text" style="height: 150px">Participation active à la concertation sociale et à la négociation d'accords collectifs au profit des entreprises et des salariés.</div>
+						<div class="text" style="height: 150px ;background-size: cover; background-position: center">Participation active à la concertation sociale et à la négociation d'accords collectifs au profit des entreprises et des salariés.</div>
 						<div class="overlay-box" sstyle="background-image: url({{asset('images/service/collective.jpg')}});background-size: cover; background-position: center;">
 							<div class="overlay-inner">
 								<div class="content">

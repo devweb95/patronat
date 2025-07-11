@@ -23,7 +23,7 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<h2>Conférence Générale<span> des Entreprises du Burkina</span></h2>
+								<h2>Confédération Générale<span> des Entreprises du Faso</span></h2>
 								<div class="text">Les instances statutaires du COGEF <br> et le président du Faso. </div>
 								<a href="#" class="theme-btn btn-style-one">Contactez nous</a>
 							</div>
@@ -43,7 +43,7 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<h2>Conférence Générale<span> des Entreprises du Burkina</span></h2>
+								<h2>Confédération Générale<span> des Entreprises du Faso</span></h2>
 								<div class="text">Le COGEF, l'organisation faitiere <br> des employeurs du <br> Burkina Faso.</div>
 								<a href="#" class="theme-btn btn-style-one">Contactez nous</a>
 							</div>
@@ -63,7 +63,7 @@
 						<!-- Content Column -->
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
-								<h2>Conférence Générale<span> des Entreprises du Burkina</span></h2>
+								<h2>Confédération Générale<span> des Entreprises du Faso</span></h2>
 								<div class="text">Le cadre d'actions en faveur<br> du secteur privé Burkinabè:</div>
 								<a href="#" class="theme-btn btn-style-one">Contactez nous</a>
 							</div>
@@ -142,7 +142,7 @@
 						<!-- Sec Title -->
 						<div class="section-title">
 							<div class="title">A propos de nous</div>
-							<h3>Conférence Générale<span> des Entreprises du Burkina</span></h3>
+							<h3>Confédération Générale<span> des Entreprises du Faso</span></h3>
 						</div>
 						
 						<div class="text">
@@ -317,7 +317,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-bullhorn"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Information</a></h6>
+                                    <h6><a href="#">Information</a></h6>
                                     <div class="text">Fourniture régulière de données économiques, juridiques et sectorielles utiles aux membres pour une meilleure prise de décision.</div>
                                 </div>
                             </div>
@@ -332,7 +332,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-suitcase"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Formation</a></h6>
+                                    <h6><a href="#">Formation</a></h6>
                                     <div class="text">Organisation de sessions de renforcement de capacités pour améliorer les compétences techniques et managériales des acteurs du secteur privé.</div>
                                 </div>
                             </div>
@@ -347,7 +347,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-area-chart"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Représentation</a></h6>
+                                    <h6><a href="#">Représentation</a></h6>
                                     <div class="text">Défense des intérêts du secteur privé auprès des autorités publiques, des partenaires techniques et financiers, et dans les instances nationales et internationales.</div>
                                 </div>
                             </div>
@@ -362,7 +362,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-coffee"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Réalisation d'études et d'enquêtes</a></h6>
+                                    <h6><a href="#">Réalisation d'études et d'enquêtes</a></h6>
                                     <div class="text">Conception et mise en œuvre d'études économiques, sectorielles ou sociales pour orienter les stratégies du secteur privé.</div>
                                 </div>
                             </div>
@@ -377,7 +377,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-building"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Assistance, conseil et orientation des membres</a></h6>
+                                    <h6><a href="#">Assistance, conseil et orientation des membres</a></h6>
                                     <div class="text">Appui personnalisé aux entreprises membres en matière de gestion, fiscalité, droit du travail, démarches administratives.</div>
                                 </div>
                             </div>
@@ -392,7 +392,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-pie-chart"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Recherche de financements et de partenariats</a></h6>
+                                    <h6><a href="#">Recherche de financements et de partenariats</a></h6>
                                     <div class="text">Soutien à l'identification d'opportunités de financement et de collaboration avec des partenaires techniques ou financiers.</div>
                                 </div>
                             </div>
@@ -407,7 +407,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-handshake-o"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Lobbying et plaidoyer</a></h6>
+                                    <h6><a href="#">Lobbying et plaidoyer</a></h6>
                                     <div class="text">Actions d'influence pour faire évoluer les politiques publiques en faveur d'un environnement des affaires plus favorable.</div>
                                 </div>
                             </div>
@@ -422,7 +422,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-balance-scale"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Médiation</a></h6>
+                                    <h6><a href="#">Médiation</a></h6>
                                     <div class="text">Intervention dans la résolution amiable des différends entre acteurs économiques ou entre entreprises et administrations.</div>
                                 </div>
                             </div>
@@ -437,7 +437,7 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-users"></span>
                                     </div>
-                                    <h6><a href="services-detail.html">Négociation collective</a></h6>
+                                    <h6><a href="#">Négociation collective</a></h6>
                                     <div class="text">Participation active à la concertation sociale et à la négociation d'accords collectifs au profit des entreprises et des salariés.</div>
                                 </div>
                             </div>
@@ -725,8 +725,8 @@
 								<li><span class="fa fa-calendar"></span> 30 mai 2025</li>
 								<li><span class="fa fa-user"></span>Admin</li>
 							</ul>
-							<h5><a href="blog-single.html">FORUM SUR LE SECTEUR PRIVE AU BURKINA FASO : UN RENDEZ-VOUS DE REFLEXION  TRIPARTITE AUTOUR DU THEME « CONSTRUIRE DES VOIES DURABLES ET INCLUSIVES POUR LE DEVELOPPEMENT ».</a></h5>
-							<a href="blog-single.html" class="theme-btn btn-style-two">Voir plus</a>
+							<h5><a href="#">FORUM SUR LE SECTEUR PRIVE AU BURKINA FASO : UN RENDEZ-VOUS DE REFLEXION  TRIPARTITE AUTOUR DU THEME « CONSTRUIRE DES VOIES DURABLES ET INCLUSIVES POUR LE DEVELOPPEMENT ».</a></h5>
+							<a href="#" class="theme-btn btn-style-two">Voir plus</a>
 						</div>
 					</div>
 				</div>
@@ -745,8 +745,8 @@
 								<li><span class="fa fa-calendar"></span> 13 mai 2025</li>
 								<li><span class="fa fa-user"></span>Admin</li>
 							</ul>
-							<h5><a href="blog-single.html">Séance de travail entre la Confédération Générale des Entreprises du Faso (COGEF) et la Banque Ouest Africaine de Développement (BOAD)</a></h5>
-							<a href="blog-single.html" class="theme-btn btn-style-two">Voir plus</a>
+							<h5><a href="#">Séance de travail entre la Confédération Générale des Entreprises du Faso (COGEF) et la Banque Ouest Africaine de Développement (BOAD)</a></h5>
+							<a href="#" class="theme-btn btn-style-two">Voir plus</a>
 						</div>
 					</div>
 				</div>
@@ -765,8 +765,8 @@
 								<li><span class="fa fa-calendar"></span> 13 mai 2025</li>
 								<li><span class="fa fa-user"></span>Admin</li>
 							</ul>
-							<h5><a href="blog-single.html">M. Idrissa NASSA, CEO DE L’ANNEE</a></h5>
-							<a href="blog-single.html" class="theme-btn btn-style-two">Voir plus</a>
+							<h5><a href="#">M. Idrissa NASSA, CEO DE L’ANNEE</a></h5>
+							<a href="#" class="theme-btn btn-style-two">Voir plus</a>
 						</div>
 					</div>
 				</div>
@@ -836,22 +836,7 @@
 	
 	<!-- Contact Page Section -->
 	<section class="contact-form-section">
-		<div class="map-section">
-			<!--Map Outer-->
-			<div class="map-outer">
-				<!--Map Canvas-->
-				<div class="map-canvas"
-					data-zoom="12"
-					data-lat="-37.817085"
-					data-lng="144.955631"
-					data-type="roadmap"
-					data-hue="#ffc400"
-					data-title="Envato"
-					data-icon-path="images/icons/map-marker.png"
-					data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
-				</div>
-			</div>
-		</div>
+		
 		<div class="container">
 			<div class="inner-container">
 				
@@ -896,7 +881,7 @@
 				
 				<!-- Default Form -->
 				<div class="default-form style-two">
-					<form method="post" action="blog.html">
+					<form method="post" action="#">
 						<div class="row clearfix">
 							<div class="form-group col-lg-4 col-md-6 col-sm-12">
 								<input type="text" name="firstname" value="" placeholder="Prénom.." required>
@@ -919,8 +904,27 @@
 							</div>                                        
 						</div>
 					</form>
+
+					
 				</div>
 				<!--End Default Form-->
+
+				<!-- <div class="map-section">
+			
+					<div class="map-outer">
+						
+						<div class="map-canvas"
+							data-zoom="12"
+							data-lat="-37.817085"
+							data-lng="144.955631"
+							data-type="roadmap"
+							data-hue="#ffc400"
+							data-title="Envato"
+							data-icon-path="images/icons/map-marker.png"
+							data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+						</div>
+					</div>
+				</div> -->
 				
 			</div>
 		</div>

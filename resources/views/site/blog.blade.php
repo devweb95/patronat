@@ -40,7 +40,7 @@
 	<!-- End / Hidden Bar -->
 	
 	<!--Page Title-->
-    <section class="page-title" style="background-image:url({{ asset('images/blog/breadcumb.jpg') }})">
+    <section class="page-title" style="background-image:url({{ asset('images/blog/breadcumb.jpg') }}); height: 70vh;background-size: cover; background-position: center; background-repeat: no-repeat;">
     	<div class="container">
 			<div class="content">
 				<h1>Actualités</h1>

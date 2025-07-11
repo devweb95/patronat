@@ -12,7 +12,7 @@
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="index.html"><img src="{{asset('images/logoheader.png')}}" alt="" /></a>
+										<a href="#"><img src="{{asset('images/logoheader.png')}}" alt="" /></a>
 									</div>
 									<div class="text">Porte-voix du secteur privé, le COGEF œuvre pour la représentation, le dialogue public-privé, le renforcement des capacités des entreprises et la promotion d’un environnement économique favorable.</div>
 									<!-- <ul class="list-style-three">
@@ -50,7 +50,7 @@
                                 <div class="footer-widget links-widget">
 									<h4>Support</h4>
 									<ul class="list-link">
-										<li><a href="">Contact Us</a></li>
+										<!-- <li><a href="">Contact Us</a></li> -->
 										<!-- <li><a href="">Submit a Ticket</a></li>
 										<li><a href="">Visit Knowledge Base</a></li> -->
 										<li><a href="">Support System</a></li>
@@ -102,13 +102,13 @@
 					
 					<!-- Copyright Column -->
 					<div class="copyright-column col-lg-6 col-md-6 col-sm-12">
-						<div class="copyright">2025 &copy; Tous droits réservés par <a href="#">Jofedigital</a></div>
+						<div class="copyright">2025 &copy; Tous droits réservés par <a href="https://jofedigital.com/">Jofedigital</a></div>
 					</div>
 					
 					<!-- Social Column -->
 					<div class="social-column col-lg-6 col-md-6 col-sm-12">
 						<ul>
-							<li class="follow">Follow us: </li>
+							<li class="follow">Suivez-nous: </li>
 							<li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
 							<li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
 							<li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>

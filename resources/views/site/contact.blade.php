@@ -48,7 +48,7 @@
     <!-- End / Hidden Bar -->
 	
 	<!--Page Title-->
-    <section class="page-title" style="background-image:url({{ asset('images/contact/breadcumb.jpg') }})">
+    <section class="page-title" style="background-image:url({{ asset('images/contact/breadcumb.jpg') }}); height: 70vh;background-size: cover; background-position: center; background-repeat: no-repeat;">
     	<div class="container">
 			<div class="content">
 				<h1>Contact</h1>
@@ -63,10 +63,10 @@
 	
 	<!-- Contact Page Section -->
 	<section class="contact-page-section">
-		<div class="map-section">
-			<!--Map Outer-->
+		<!-- <div class="map-section">
+			
 			<div class="map-outer">
-				<!--Map Canvas-->
+				
 				<div class="map-canvas"
 					data-zoom="12"
 					data-lat="-37.817085"
@@ -78,81 +78,102 @@
 					data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="container">
 			<div class="inner-container">
-				<h2>Contactez notre équipe d'assistance ou prenez rendez-vous <br> avec <span>notre consultant.</span></h2>
-				<div class="row clearfix">
-					
-					<!-- Info Column -->
-					<div class="info-column col-lg-7 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<div class="text">Veuillez nous contacter en utilisant les informations ci-dessous. Pour plus d'informations sur nos services de conseil en gestion, veuillez consulter la page appropriée de notre site.</div>
-							<ul class="list-style-six">
-								<li><span class="icon fa fa-building"></span> Av. Kwame Nkrumah, Koulouba, <br> 01 BP 1482 Ouagadougou 01, Ouagadougou ,<br> Burkina Faso </li>
-								<li><span class="icon fa fa-fax"></span> +226 25 33 03 09</li>
-								<li><span class="icon fa fa-envelope-o"></span>contact@patronat.bf</li>
-							</ul>
+				
+				<!-- Upper Content -->
+				<div class="upper-content">
+					<div class="row clearfix">
+						
+						<!-- Title Column -->
+						<div class="title-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<!-- Sec Title -->
+								<div class="section-title">
+									<div class="title">Contactez nous</div>
+									<h3>N'hésitez pas à nous <br> poser des <span>questions</span></h3>
+								</div>
+							</div>
 						</div>
+						
+						<!-- Info Column -->
+						<div class="info-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="row clearfix">
+									<!-- Column -->
+									<div class="column col-lg-6 col-md-6 col-sm-12">
+										<ul class="list-style-two style-two">
+											<li><span class="icon flaticon-placeholder-1"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
+										</ul>
+									</div>
+									<!-- Column -->
+									<div class="column col-lg-6 col-md-6 col-sm-12">
+										<ul class="list-style-two style-two">
+											<li><span class="icon flaticon-phone-call"></span>(+226) 25 33 03 09</li>
+											<li><span class="icon flaticon-chat"></span>contact@patronat.bf</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
-					
-					<!-- Form Column -->
-					<div class="form-column col-lg-5 col-md-12 col-sm-12">
-						<div class="inner-column">
-							
-							<!--Contact Form-->
-							<div class="contact-form">
-								<form method="post" action="sendemail.php" id="contact-form">
-									
-									<div class="form-group">
-										<input type="text" name="firstname" value="" placeholder="Nom complet" required>
-									</div>
-									
-									<div class="form-group">
-										<input type="text" name="email" value="" placeholder="Email" required>
-									</div>
-									
-									<div class="form-group">
-										<select class="custom-select-box">
-											<option>Choisir un sujet</option>
-											<option>Sujet 1</option>
-											<option>Sujet 2</option>
-										</select>
-									</div>
-									
-									<div class="form-group">
-										<textarea name="message" placeholder="Ecrire.."></textarea>
-									</div>
-									
-									<div class="form-group">
-										<button type="submit" class="theme-btn btn-style-one">Envoyer</button>
-									</div>                                        
-									
-								</form>
+				</div>
+				
+				<!-- Default Form -->
+				<div class="default-form style-two">
+					<form method="post" action="blog.html">
+						<div class="row clearfix">
+							<div class="form-group col-lg-4 col-md-6 col-sm-12">
+								<input type="text" name="firstname" value="" placeholder="Prénom.." required>
 							</div>
 							
+							<div class="form-group col-lg-4 col-md-6 col-sm-12">
+								<input type="text" name="Lastname" value="" placeholder="Nom" required>
+							</div>
+							
+							<div class="form-group col-lg-4 col-md-12 col-sm-12">
+								<input type="text" name="email" value="" placeholder="Adresse email.." required>
+							</div>
+							
+							<div class="form-group col-lg-12 col-md-12 col-sm-12">
+								<textarea name="message" placeholder="Ecrire..."></textarea>
+							</div>
+							
+							<div class="form-group col-lg-12 col-md-12 col-sm-12">
+								<button type="submit" class="theme-btn btn-style-one">Envoyer</button>
+							</div>                                        
 						</div>
-					</div>
-					
+					</form>
 				</div>
+				<!--End Default Form-->
+
+				
 			</div>
 		</div>
+		
 	</section>
-	<!-- End Team Page Section -->
+
+	<!-- <div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125298.59264892332!2d-1.6000000000000001!3d12.3714277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee2f2f9c2f9c2f9c%3A0x8b8b8b8b8b8b8b8b!2sOuagadougou%2C%20Burkina%20Faso!5e0!3m2!1sfr!2sbf!4v1641234567890!5m2!1sfr!2sbf"
+                            width="100%" 
+                            height="500px" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div> -->
 	
+	<!-- End Team Page Section -->
+
 	<!-- Contact Info Section -->
 	<section class="contact-info-section" style="background-image:url({{asset('images/contact/backgroud.jpg')}})">
 		<div class="container">
 			<div class="row clearfix">
 				
-				<!-- <div class="column col-lg-4 col-md-6 col-sm-12">
-					<h4>United Kingdom</h4>
-					<ul class="list-style-seven">
-						<li><span class="icon flaticon-map-1"></span> 49488 Avenida Obregon, <br> La Quinta, CA 92253</li>
-						<li><span class="icon flaticon-call-answer"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li>
-						<li><span class="icon fa fa-envelope-o"></span>support@lawsight.com.uk</li>
-					</ul>
-				</div> -->
 				<div class="column col-lg-4 col-md-6 col-sm-12">
 					<h4>Burkina Faso</h4>
 					<ul class="list-style-seven">
@@ -161,18 +182,24 @@
 						<li><span class="icon fa fa-envelope-o"></span>contact@patronat.bf</li>
 					</ul>
 				</div>
-			<!-- 	<div class="column col-lg-4 col-md-6 col-sm-12">
-					<h4>Netherlands</h4>
-					<ul class="list-style-seven">
-						<li><span class="icon flaticon-map-1"></span> Nieuwe Leliestraat 27-HS <br> 101J Amsterdam</li>
-						<li><span class="icon flaticon-call-answer"></span> +1-(281)-813 926 <br> +1-(281)-813 612</li>
-						<li><span class="icon fa fa-envelope-o"></span>support@lawsight.com.uk</li>
-					</ul>
-				</div> -->
+				<div class="column col-lg-8 col-md-8 col-sm-12">
+					<div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125298.59264892332!2d-1.6000000000000001!3d12.3714277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee2f2f9c2f9c2f9c%3A0x8b8b8b8b8b8b8b8b!2sOuagadougou%2C%20Burkina%20Faso!5e0!3m2!1sfr!2sbf!4v1641234567890!5m2!1sfr!2sbf"
+                            width="100%" 
+                            height="500px" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+				</div> 
 				
 			</div>
 		</div>
 	</section>
+
 	<!-- End Contact Info Section -->
 	
 	<!--Main Footer-->

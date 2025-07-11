@@ -51,13 +51,13 @@
                                             <li><a href="services-detail.html">Services Detail</a></li>
                                         </ul> -->
                                     </li>
-                                    <li class="dropdown"><a href="#">Publications</a>
+                                    <li><a href="{{ route('publicités') }}">Publications</a>
                                         <!-- <ul>
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="services-detail.html">Services Detail</a></li>
                                         </ul> -->
                                     </li>
-                                    <li class="dropdown"><a href="#">Projets</a>
+                                    <li ><a href="{{route('projets')}}">Projets</a>
                                         <ul>
                                             <li class="dropdown"><a href="services.html">PAFPA</a>
                                                 <ul>
@@ -76,7 +76,8 @@
                                         </ul>
                                     </li> -->
                                    
-                                    <li class="dropdown"><a href="#">Adhésion</a>
+                                    <li><a href="{{route('adhésion')}}">Adhésion</a>
+
                                         <!-- <ul>
                                             <li><a href="portfolio-2-column.html">Portfolio Two Column</a></li>
                                             <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
@@ -164,13 +165,13 @@
                                             <li><a href="services-detail.html">Services Detail</a></li>
                                         </ul> -->
                                     </li>
-                                    <li class="dropdown"><a href="#">Publications</a>
+                                    <li><a href="{{ route('publicités') }}">Publications</a>
                                         <!-- <ul>
                                             <li><a href="services.html">Services</a></li>
                                             <li><a href="services-detail.html">Services Detail</a></li>
                                         </ul> -->
                                     </li>
-                                    <li class="dropdown"><a href="#">Projets</a>
+                                    <li ><a href="{{route('projets')}}">Projets</a>
                                         <ul>
                                             <li class="dropdown"><a href="#">PAFPA</a>
                                                 <ul>
@@ -189,7 +190,7 @@
                                         </ul>
                                     </li> -->
                                    
-                                    <li class="dropdown"><a href="#">Adhésion</a>
+                                    <li ><a href="{{route('adhésion')}}">Adhésion</a>
                                         <!-- <ul>
                                             <li><a href="portfolio-2-column.html">Portfolio Two Column</a></li>
                                             <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
