@@ -63,7 +63,7 @@
 							<!--Footer Column-->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget gallery-widget">
-									<h4>Gallerie</h4>
+									<h4>Contact</h4>
 									<div class="widget-content">
 										<div class="images-outer clearfix">
 											<ul class="list-style-three">
