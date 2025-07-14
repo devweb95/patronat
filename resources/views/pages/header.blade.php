@@ -33,9 +33,9 @@
                                             <li><a href="index-2.html">Home Page 02</a></li>
                                         </ul> -->
                                     </li>
-                                      <li class="dropdown"><a href="#">CNPB</a>
+                                      <li class="dropdown"><a href="#">COGEF</a>
                                         <ul>
-                                            <li><a href="#">Le CNPB</a></li>
+                                            <li><a href="{{ route('cogef') }}">La COGEF</a></li>
                                             <li><a href="#">Le mot du président</a></li>
                                         </ul>
                                     </li>
@@ -147,9 +147,9 @@
                                             <li><a href="index-2.html">Home Page 02</a></li>
                                         </ul> -->
                                     </li>
-                                      <li class="dropdown"><a href="#">CNPB</a>
+                                      <li class="dropdown"><a href="#">COGEF</a>
                                         <ul>
-                                            <li><a href="#">Le CNPB</a></li>
+                                            <li><a href="{{ route('cogef') }}">La COGEF</a></li>
                                             <li><a href="#">Le mot du président</a></li>
                                         </ul>
                                     </li>

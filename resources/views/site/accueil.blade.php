@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <section class="banner-section-two" style="background-image:url({{asset('images/background/burk.jpg')}})">
+    <section class="banner-section-two" style="background-image:url({{asset('images/background/burkmap.jpg')}})">
 		<div class="left-side">
 			<div class="icon-image"></div>
 		</div>
@@ -12,15 +12,15 @@
 			<div class="main-slider-carousel owl-carousel owl-theme">
 				
 				<!-- Slide -->
-				<div class="slide">
+				<!-- <div class="slide">
 					<div class="row clearfix">
-						<!-- Image Column -->
+						
 						<div class="image-column col-lg-7 col-md-12 col-sm-12">
 							<div class="image">
 								<img src="{{ asset('images/new/men.png') }}" alt="" />
 							</div>
 						</div>
-						<!-- Content Column -->
+						
 						<div class="content-column col-lg-5 col-md-12 col-sm-12">
 							<div class="inner-column">
 								<h2>Confédération Générale<span> des Entreprises du Faso</span></h2>
@@ -29,7 +29,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
 				<!-- Slide -->
 				<div class="slide">
@@ -449,20 +449,25 @@
             
             <!-- Image Column -->
             <div class="image-column col-lg-4 col-md-12 col-sm-12">
-                <div class="inner-column clearfix">
+                <div class="inner-column clearfix" style="justify-content: center">
                     
                     <div class="image">
                         <img src="{{ asset('images/resource/about-2.jpg') }}" alt="COGEF Experience"/>
-                        <div class="overlay-box">
+                        <!-- <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
                                     <h2>35 <span>ans d'expérience</span></h2>
+									
                                 </div>
+								
                             </div>
-                        </div>
+							
+                        </div> -->
+						
                     </div>
                     
                 </div>
+				<a href="{{ route('adhésion') }}" class="theme-btn btn-style-one">Rejoindre COGEF</a>
             </div>
             
         </div>
@@ -579,7 +584,7 @@
 			<div class="section-title light">
 				<div class="clearfix">
 					<div class="pull-left">
-						<div class="title">Notre Équipe</div>
+						<div class="title">Bureau exécutif</div>
 						<h3>Nous sommes fiers de notre <br> parcours et de nos <span>réalisations</span></h3>
 					</div>
 					<div class="pull-right">

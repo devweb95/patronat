@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdhesionController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CogefController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjetController;
@@ -21,6 +22,8 @@ Route::get('/contact', [ContactController::class,'index'])->name('contact');
 Route::get('/publicités', [PubController::class,'index'])->name('publicités');
 Route::get('/projets', [ProjetController::class,'index'])->name('projets');
 Route::get('/adhésion', [AdhesionController::class,'index'])->name('adhésion');
+Route::get('/cogef', [CogefController::class,'index'])->name('cogef');
+
 
 
 

@@ -110,10 +110,10 @@
 						<ul>
 							<li class="follow">Suivez-nous: </li>
 							<li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
-							<li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
+							<!-- <li><a href="#"><span class="fa fa-twitter-square"></span></a></li> -->
 							<li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
-							<li><a href="#"><span class="fa fa-google-plus-square"></span></a></li>
-							<li><a href="#"><span class="fa fa-rss-square"></span></a></li>
+							<!-- <li><a href="#"><span class="fa fa-google-plus-square"></span></a></li> -->
+							<!-- <li><a href="#"><span class="fa fa-rss-square"></span></a></li> -->
 						</ul>
 					</div>
 					
