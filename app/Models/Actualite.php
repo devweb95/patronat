@@ -11,12 +11,10 @@ class Actualite extends Model
         'titre',
         'image_avant',
         'contenu',
-        'images',
         'date_de_publication',
     ];
 
      protected $casts = [
-        'images' => 'array',
         'date_de_publication' => 'date',
     ];
 

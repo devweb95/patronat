@@ -21,6 +21,7 @@
     <link href="{{ asset('css/projet.css') }}" rel="stylesheet" >
     <link href="{{ asset('css/adhesion.css') }}" rel="stylesheet" >
     <link href="{{ asset('css/cogef.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
     
     <!-- Additional CSS -->
     @stack('styles')

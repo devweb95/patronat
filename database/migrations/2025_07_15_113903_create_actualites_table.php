@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('titre')->required();
             $table->string('image_avant')->nullable();
             $table->text('contenu')->required();
-            $table->json('images')->nullable();
             $table->timestamp('date_de_publication');
             $table->timestamps();
         });
