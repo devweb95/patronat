@@ -16,15 +16,16 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 Route::get('/', [HomeController::class,'index'])->name('accueil');
+
 Route::get('/actualités', [BlogController::class,'index'])->name('actualités');
+Route::get('/actualites/{id}', [ActualiteController::class, 'show'])->name('actualites.show');
+
 Route::get('/services', [ServiceController::class,'index'])->name('services');
 Route::get('/contact', [ContactController::class,'index'])->name('contact');
 Route::get('/publicités', [PubController::class,'index'])->name('publicités');
 Route::get('/projets', [ProjetController::class,'index'])->name('projets');
 Route::get('/adhésion', [AdhesionController::class,'index'])->name('adhésion');
 Route::get('/cogef', [CogefController::class,'index'])->name('cogef');
-
-
 
 
 

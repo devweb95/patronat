@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Actualite;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -12,7 +12,9 @@ class BlogController extends Controller
     public function index()
     {
         //
-        return view('site.blog');
+        $actualites = Actualite::all();
+        $actualites = Actualite::orderByDesc('date_de_publication')->paginate(10);
+        return view('site.blog',compact('actualites'));
     }
 
     /**
@@ -37,6 +39,8 @@ class BlogController extends Controller
     public function show(string $id)
     {
         //
+        $actualites = Actualite::with(['user'])->findOrFail($id);
+
     }
 
     /**

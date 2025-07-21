@@ -27,16 +27,21 @@ class ActualiteResource extends Resource
                 Forms\Components\TextInput::make('titre')
                 ->required()
                 ->maxLength(255),
-                Forms\Components\FileUpload::make('image_avant')
-                ->label('Image')
+                Forms\Components\Hidden::make('user_id')
+                ->dehydrateStateUsing(fn ($state) => auth()->id()),
+                Forms\Components\FileUpload::make(name: 'image_avant')
+                ->required()
                 ->maxSize(500)
-                ->required(),
+                ->label('Image')
+                ->directory('actualites'),
                 Forms\Components\Textarea::make('contenu')
                 ->required()
-                ->columnSpanFull(),
-                Forms\Components\DatePicker::make('date_de_publication'),
-            ]);
+                ->columnSpanFull(),  
+                Forms\Components\DateTimePicker::make('date_de_publication')
+                ->default(now()),      
+        ]);
     }
+
 
     public static function table(Table $table): Table
     {
@@ -44,12 +49,10 @@ class ActualiteResource extends Resource
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('titre')
-                ->searchable(),
+                ->sortable(),
                 Tables\Columns\ImageColumn::make('image_avant')
                 ->disk('public'),
-                Tables\Columns\TextColumn::make('contenu')
-                ->limit(100)
-                ->toggleable(),
+                Tables\Columns\TextColumn::make('contenu'),
                 Tables\Columns\TextColumn::make('date_de_publication')
                 ->dateTime()
                 ->sortable(),
@@ -61,18 +64,22 @@ class ActualiteResource extends Resource
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
+
+
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->defaultSort('date_de_publication', 'desc');
     }
 
     public static function getRelations(): array
@@ -87,7 +94,7 @@ class ActualiteResource extends Resource
         return [
             'index' => Pages\ListActualites::route('/'),
             'create' => Pages\CreateActualite::route('/create'),
-            'edit' => Pages\EditActualite::route('/{record}/edit'), 
+            'edit' => Pages\EditActualite::route('/{record}/edit'),
         ];
     }
 }
