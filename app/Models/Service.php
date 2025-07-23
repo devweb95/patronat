@@ -5,27 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Actualite extends Model
+class Service extends Model
 {
     //
-    protected $fillable = [
+    protected $fillable=[
         'titre',
         'image_avant',
         'contenu',
         'galerie',
-        'date_de_publication',
         'user_id',
+        'date_de_publication',
     ];
 
-    protected $casts = [
-        'date_de_publication' => 'datetime',
-        'user_id' => 'integer',
-        'galerie' => 'array',
-
+    protected $casts=[
+        'date_de_publication'=>'datetime',
+        'galerie'=> 'array',
+        'user_id'=>'integer',
     ];
 
-   public function user():BelongsTo{
+    public function user():BelongsTo{
         return $this->belongsTo(User::class);
-
     }
 }

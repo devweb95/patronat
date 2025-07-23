@@ -72,8 +72,8 @@
 								<li><span class="fa fa-calendar"></span>{{$actu->date_de_publication}}</li>
 								<li><span class="fa fa-user"></span>{{ $actu->user->name }}</li>
 							</ul>
-							<h5><a href="#">{{$actu->titre}}</a></h5>
-							<a href="#" class="theme-btn btn-style-three">Voir plus</a>
+							<h5><a href="{{ route('actualite.show', $actu->id) }}">{{$actu->titre}}</a></h5>
+							<a href="{{ route('actualite.show', $actu->id) }}" class="theme-btn btn-style-three">Voir plus</a>
 						</div>
 					</div>
 				</div>

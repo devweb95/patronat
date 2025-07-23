@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Service;
 class ServiceController extends Controller
 {
     /**
@@ -12,7 +12,8 @@ class ServiceController extends Controller
     public function index()
     {
         //
-        return view('site.service');
+        $services=Service::all();
+        return view('site.service',compact('services'));
     }
 
     /**
@@ -37,6 +38,8 @@ class ServiceController extends Controller
     public function show(string $id)
     {
         //
+        $services= Service::all();
+        return view('site.services-detail',compact('services'));
     }
 
     /**

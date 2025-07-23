@@ -41,8 +41,23 @@ class BlogController extends Controller
         //
         $actualites = Actualite::with(['user'])->findOrFail($id);
 
-    }
+        $actualite = Actualite::where('id','!=',$id)
+        ->orderByDesc('date_de_publication')
+        ->take(3)
+        ->get();
 
+       /*  $next = Actualite::where('id','>',$actualites->id)
+        ->orderBy('id','asc')
+        ->first();
+
+        $previous = Actualite::where('id','<',$actualites->id)
+        ->orderBy('id','desc')
+        ->first(); */
+
+        return view('site.blog-single',compact('actualites','actualite'));
+
+    }
+ 
     /**
      * Show the form for editing the specified resource.
      */

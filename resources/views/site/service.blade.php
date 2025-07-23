@@ -60,7 +60,27 @@
 				<h3>Nous œuvrons au quotidien pour défendre les intérêts du secteur privé, favoriser le dialogue public-privé  <br> et promouvoir <span>un environnement des affaires sain et équitable.</span></h3>
 			</div>
 			<div class="row clearfix">
-				
+				@foreach ($services as $service )
+
+				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12" >
+					<div class="inner-box">
+						<div class="icon-box">
+							<span class="icon flaticon-internet"></span>
+						</div>
+						<h3>{{$service->titre}}</h3>
+						<div class="text" style="height: 150px ; background-size: cover; background-position: center;">{{$service->contenu}}</div>
+						<div class="overlay-box" style="background-image: url({{ asset('images/service/formation.jpg') }}) ">
+							<div class="overlay-inner">
+								<div class="content">
+									<span class="icon flaticon-internet"></span>
+									<h4><a href="#">{{$service->titre}}</a></h4>
+									<a href="#" class="theme-btn btn-style-one">consulter</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				@endforeach
 				<!-- Services Block Two -->
 				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12" >
 					<div class="inner-box">
