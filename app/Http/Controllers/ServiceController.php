@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Service;
+use App\Models\Info;
 class ServiceController extends Controller
 {
     /**
@@ -13,7 +14,10 @@ class ServiceController extends Controller
     {
         //
         $services=Service::all();
-        return view('site.service',compact('services'));
+        $services = Service::orderByDesc('date_de_publication')->paginate(10);
+
+        $infos = Info::first();
+        return view('site.service',compact('services', 'infos'));
     }
 
     /**
@@ -38,8 +42,14 @@ class ServiceController extends Controller
     public function show(string $id)
     {
         //
-        $services= Service::all();
-        return view('site.services-detail',compact('services'));
+    
+        $services= Service::with(['user'])->findOrFail($id);
+        $service= Service::where('id', '!=', $id)
+        ->orderByDesc('date_de_publication')
+        ->take(2)
+        ->get(); 
+
+        return view('site.services-detail', compact('services', 'service'));
     }
 
     /**

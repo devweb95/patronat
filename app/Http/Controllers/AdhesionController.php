@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Info;
 class AdhesionController extends Controller
 {
     /**
@@ -12,7 +12,8 @@ class AdhesionController extends Controller
     public function index()
     {
         //
-        Return view('site.adhesion');
+        $infos = Info::first();
+        Return view('site.adhesion', compact('infos'));
     }
 
     /**

@@ -25,15 +25,14 @@
 				<!--Sidebar Side-->
                 <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
                 	<aside class="sidebar padding-right">
-						
+					
 						<!--Blog Category Widget-->
                         <div class="sidebar-widget sidebar-blog-category">
                             <ul class="blog-cat">
-                                <li class="active"><a href="services-detail.html">Business Law</a></li>
-                                <li><a href="services-detail.html">Personal Law</a></li>
-                                <li><a href="services-detail.html">Insurance Law</a></li>
-                                <li><a href="services-detail.html">Family Law</a></li>
-                                <li><a href="services-detail.html">Trade Law</a></li>
+								
+								<li class="active"><a href="#"></a></li>
+							
+                                
                             </ul>
                         </div>
 						
@@ -43,14 +42,14 @@
                                 <h4>Contact</h4>
                             </div>
 							<ul>
-								<li><span class="icon flaticon-map-1"></span> 3111 West Allegheny Avenue <br> Pennsylvania 19132</li>
-								<li><span class="icon flaticon-call-answer"></span> 1-982-782-5297 <br> 1-982-125-6378</li>
-								<li><span class="icon flaticon-comment"></span> support@lawsight.com</li>
+								<li><span class="icon flaticon-map-1"></span>{{$infos->adresse}}</li>
+								<li><span class="icon flaticon-call-answer"></span> {{$infos->numero}}</li>
+								<li><span class="icon flaticon-comment"></span> {{$infos->email}}</li>
 							</ul>
 						</div>
 						
 						<!-- Brochures Widget-->
-                        <div class="sidebar-widget brochures-widget">
+                       <!--  <div class="sidebar-widget brochures-widget">
                         	<div class="sidebar-title">
                                 <h4>Brochures</h4>
                             </div>
@@ -60,77 +59,59 @@
 								<li><a href="#"><span class="flaticon-pdf"></span> Characteristics</a></li>
 							</ul>
 						</div>
-						
+						 -->
 						
 					</aside>
 				</div>
 				
 				<!--Content Side-->
+				
+
                 <div class="content-side col-lg-8 col-md-12 col-sm-12">
                 	<div class="services-single">
-						<h4>Business Law</h4>
+						<h4>{{$services->titre}}</h4>
 						<div class="text">
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered altera tion in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.</p>
-							<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+							<p>{{ $services->contenu }}</p>
 						</div>
-						<ul class="list-style-five">
+						<!-- <ul class="list-style-five">
 							<li>Sed do eiusmod tempor incididunt ut</li>
 							<li>Labore et dolore magna aliqua</li>
 							<li>Ut enim ad minim veniam quis nostrud</li>
 							<li>Andomised words which don't look</li>
-						</ul>
+						</ul> -->
 						<!-- Services Gallery -->
+						 	@if ($services->galerie && is_array($services->galerie))
 						<div class="services-gallery">
 							<div class="services-carousel owl-carousel owl-theme">
+
+								@foreach ($services->galerie as $galeries )
 								<div class="slide">
 									<div class="image">
-										<img src="images/resource/service-2.jpg" alt="">
+										<img src="{{asset('storage/'. $galeries)}}" alt="">
 									</div>
 								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="images/resource/service-3.jpg" alt="">
-									</div>
-								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="images/resource/service-2.jpg" alt="">
-									</div>
-								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="images/resource/service-3.jpg" alt="">
-									</div>
-								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="images/resource/service-2.jpg" alt="">
-									</div>
-								</div>
-								<div class="slide">
-									<div class="image">
-										<img src="images/resource/service-3.jpg" alt="">
-									</div>
-								</div>
+								@endforeach
+								
+							
 							</div>
 						</div>
-						
+						@endif
 						<!--Services Info Tabs-->
                         <div class="Services-info-tabs">
                             <!--Service Tabs-->
                             <div class="service-tabs tabs-box">
                             
                                 <!--Tab Btns-->
-                                <ul class="tab-btns tab-buttons clearfix">
+                               <!--  <ul class="tab-btns tab-buttons clearfix">
                                     <li data-tab="#prod-audit" class="tab-btn active-btn"><i>Audit</i></li>
                                     <li data-tab="#prod-strategy" class="tab-btn"><i>Strategy</i></li>
                                     <li data-tab="#prod-sustainability" class="tab-btn"><i>Sustainability</i></li>
-                                </ul>
+                                </ul> -->
                                 
                                 <!--Tabs Container-->
-                                <div class="tabs-content">
+                                <!-- <div class="tabs-content">
                                     
-                                    <!--Tab / Active Tab-->
+                                   
                                     <div class="tab active-tab" id="prod-audit">
                                         <div class="content">
 											<div class="text">
@@ -140,7 +121,7 @@
 										</div>
 									</div>
 									
-									<!--Tab-->
+									
                                     <div class="tab" id="prod-strategy">
                                         <div class="content">
 											<div class="text">
@@ -150,7 +131,7 @@
 										</div>
 									</div>	
 									
-									<!--Tab-->
+									
                                     <div class="tab" id="prod-sustainability">
                                         <div class="content">
 											<div class="text">
@@ -160,34 +141,36 @@
 										</div>
 									</div>
 									
-								</div>
+								</div> -->
 							</div>
 						</div>
 						
 						<div class="row clearfix">
-							
-							<!-- Services Block Two -->
+							@foreach ($service as $servi)
 							<div class="services-block-two style-two col-lg-6 col-md-6 col-sm-12">
 								<div class="inner-box">
 									<div class="icon-box">
 										<span class="icon flaticon-internet"></span>
 									</div>
-									<h3>Business Law</h3>
-									<div class="text">It is a long established fact that areader will be distracted by the readable content of a page when looking.</div>
+									<h3>{{$servi->titre}}</h3>
+									<div class="text">{{$servi->contenu}}.</div>
 									<div class="overlay-box" style="background-image: url(images/resource/service-1.jpg);">
 										<div class="overlay-inner">
 											<div class="content">
 												<span class="icon flaticon-internet"></span>
-												<h4><a href="#">Business Law</a></h4>
-												<a href="#" class="theme-btn btn-style-one">consult now</a>
+												<h4><a href="{{route('service.show', $servi->id)}}">{{$servi->titre}}</a></h4>
+												<a href="{{route('service.show', $servi->id)}}" class="theme-btn btn-style-one">Consultez</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							@endforeach
+							<!-- Services Block Two -->
+							
 							
 							<!-- Services Block Two -->
-							<div class="services-block-two style-two col-lg-6 col-md-6 col-sm-12">
+							<!-- <div class="services-block-two style-two col-lg-6 col-md-6 col-sm-12">
 								<div class="inner-box">
 									<div class="icon-box">
 										<span class="icon flaticon-museum"></span>
@@ -204,12 +187,12 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							
 						</div>
 						
 						<!-- More Services -->
-						<div class="more-services">
+						<!-- <div class="more-services">
 							<div class="clearfix">
 								<div class="pull-left">
 									<a href="#"><span class="fa fa-angle-double-left"></span> Previous Service</a>
@@ -218,26 +201,27 @@
 									<a href="#">Newer Service <span class="fa fa-angle-double-right"></span></a>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						
 					</div>
 				</div>
+				
 			
 			</div>
 		</div>
 	</div>
 	
 	<!-- Subscribe Section -->
-	<section class="subscribe-section">
+	<section class="subscribe-section style-two">
 		<div class="container">
-			<div class="inner-container" style="background-image: url(images/background/3.jpg)">
-				<h2>Subscribe Your Email for Newsletter <br> & Promotion</h2>
+			<div class="inner-container" style="background-image: url({{asset('images/blog/news.jpg')}}); display: flex; justify-content: center; align-items: center; height: 300px">
+				<h2>Inscrivez votre email pour la newsletter <!-- <br> & Promotion --></h2>
 				<!-- Subscribe Form -->
 				<div class="subscribe-form">
-					<form method="post" action="contact.html">
+					<form method="post" action="#">
 						<div class="form-group">
-							<input type="email" name="email" value="" placeholder="Email address.." required>
-							<button type="submit" class="theme-btn subscribe-btn">Subscribe</button>
+							<input type="email" name="email" value="" placeholder="Adresse email" required>
+							<button type="submit" class="theme-btn subscribe-btn">S'inscrire</button>
 						</div>
 					</form>
 				</div>

@@ -104,14 +104,14 @@
 									<!-- Column -->
 									<div class="column col-lg-6 col-md-6 col-sm-12">
 										<ul class="list-style-two style-two">
-											<li><span class="icon flaticon-placeholder-1"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
+											<li><span class="icon flaticon-placeholder-1"></span>{{$infos->adresse}}</li>
 										</ul>
 									</div>
 									<!-- Column -->
 									<div class="column col-lg-6 col-md-6 col-sm-12">
 										<ul class="list-style-two style-two">
-											<li><span class="icon flaticon-phone-call"></span>(+226) 25 33 03 09</li>
-											<li><span class="icon flaticon-chat"></span>contact@patronat.bf</li>
+											<li><span class="icon flaticon-phone-call"></span>{{$infos->numero}}</li>
+											<li><span class="icon flaticon-chat"></span>{{$infos->email}}</li>
 										</ul>
 									</div>
 								</div>
@@ -177,9 +177,9 @@
 				<div class="column col-lg-4 col-md-6 col-sm-12">
 					<h4>Burkina Faso</h4>
 					<ul class="list-style-seven">
-						<li><span class="icon flaticon-map-1"></span> Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, <br>  Ouagadougou, Burkina Faso</li>
-						<li><span class="icon flaticon-call-answer"></span> +226 25 33 03 09 <!-- <br> --> </li>
-						<li><span class="icon fa fa-envelope-o"></span>contact@patronat.bf</li>
+						<li><span class="icon flaticon-map-1"></span> {{$infos->adresse}}</li>
+						<li><span class="icon flaticon-call-answer"></span> {{$infos->numero}} </li>
+						<li><span class="icon fa fa-envelope-o"></span>{{$infos->email}}</li>
 					</ul>
 				</div>
 				<div class="column col-lg-8 col-md-8 col-sm-12">

@@ -67,9 +67,9 @@
 									<div class="widget-content">
 										<div class="images-outer clearfix">
 											<ul class="list-style-three">
-												<li><span class="icon fa fa-phone"></span> (+226) 25 33 03 09</li>
-												<li><span class="icon fa fa-envelope"></span> contact@patronat.bf</li>
-												<li><span class="icon fa fa-home"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
+												<li><span class="icon fa fa-phone"></span> {{$infos->numero}}</li>
+												<li><span class="icon fa fa-envelope"></span> {{$infos->email}}</li>
+												<li><span class="icon fa fa-home"></span>{{$infos->adresse}}</li>
 											</ul>
 											<!-- 
 											<figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-1.jpg" alt=""></a></figure>

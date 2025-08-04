@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'PATRONAT | Actualités')
+@section('title', 'PATRONAT | {{$actualites->titre}}')
 
 @section('content')
     <!--End Main Header -->
@@ -93,12 +93,12 @@
 						</div>
 						 -->
 						<!-- New Posts -->
-						<div class="new-posts">
+						<!-- <div class="new-posts">
 							<div class="clearfix">
 								<a class="prev-post pull-left" href="#"><span class="fa fa-angle-double-left"></span> Previous Post</a>
 								<a class="next-post pull-right" href="#">Next Post <span class="fa fa-angle-double-right"></span></a>
 							</div>
-						</div>
+						</div> -->
 						
 						<!--Comments Area-->
 						<!-- <div class="comments-area">
@@ -177,12 +177,12 @@
 						
 						<!-- Search -->
                         <div class="sidebar-widget search-box">
-                        	<form method="post" action="contact.html">
+                        	<!-- <form method="post" action="contact.html">
                                 <div class="form-group">
                                     <input type="search" name="search-field" value="" placeholder="Enter Your Keyword..." required>
                                     <button type="submit"><span class="icon fa fa-search"></span></button>
                                 </div>
-                            </form>
+                            </form> -->
 						</div>
 						
 						<!--Blog Category Widget-->
@@ -283,14 +283,14 @@
 	<!-- Subscribe Section -->
 	<section class="subscribe-section style-two">
 		<div class="container">
-			<div class="inner-container" style="background-image: url(images/background/3.jpg)">
-				<h2>Subscribe Your Email for Newsletter <br> & Promotion</h2>
+			<div class="inner-container" style="background-image: url({{asset('images/blog/news.jpg')}}); display: flex; justify-content: center; align-items: center; height: 300px">
+				<h2>Inscrivez votre email pour la newsletter <!-- <br> & Promotion --></h2>
 				<!-- Subscribe Form -->
 				<div class="subscribe-form">
-					<form method="post" action="contact.html">
+					<form method="post" action="#">
 						<div class="form-group">
-							<input type="email" name="email" value="" placeholder="Email address.." required>
-							<button type="submit" class="theme-btn subscribe-btn">Subscribe</button>
+							<input type="email" name="email" value="" placeholder="Adresse email" required>
+							<button type="submit" class="theme-btn subscribe-btn">S'inscrire</button>
 						</div>
 					</form>
 				</div>

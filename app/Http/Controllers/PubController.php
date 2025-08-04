@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Info;
 class PubController extends Controller
 {
     /**
@@ -12,7 +12,8 @@ class PubController extends Controller
     public function index()
     {
         //
-        return view('site.publication');
+        $infos = Info::first();
+        return view('site.publication',compact('infos'));
     }
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Models\Info;
-class ProjetController extends Controller
+use Illuminate\Http\Request;
+
+class footerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,8 +12,11 @@ class ProjetController extends Controller
     public function index()
     {
         //
-        $infos = Info::first();
-        return view('site.projet',compact('infos'));
+        $infos= Info::first();
+        /* $email= $infos->email ?? null;
+        $adresse= $infos->adresse ?? null;
+        $number=$infos->numero ?? null; */
+        return view('pages.footer', compact('infos'));
     }
 
     /**

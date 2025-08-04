@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Actualite;
+use App\Models\Info;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -14,6 +15,8 @@ class BlogController extends Controller
         //
         $actualites = Actualite::all();
         $actualites = Actualite::orderByDesc('date_de_publication')->paginate(10);
+
+       
         return view('site.blog',compact('actualites'));
     }
 
@@ -46,15 +49,10 @@ class BlogController extends Controller
         ->take(3)
         ->get();
 
-       /*  $next = Actualite::where('id','>',$actualites->id)
-        ->orderBy('id','asc')
-        ->first();
+        $infos= Info::first();
 
-        $previous = Actualite::where('id','<',$actualites->id)
-        ->orderBy('id','desc')
-        ->first(); */
 
-        return view('site.blog-single',compact('actualites','actualite'));
+        return view('site.blog-single',compact('actualites','actualite','infos'));
 
     }
  
@@ -81,4 +79,7 @@ class BlogController extends Controller
     {
         //
     }
+
+    // Nouvelle méthode pour l'accueil
+
 }

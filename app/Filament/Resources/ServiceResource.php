@@ -31,8 +31,8 @@ class ServiceResource extends Resource
                 Forms\Components\Hidden::make('user_id')
                 ->dehydrateStateUsing(fn ($state) => auth()->id()),
                 Forms\Components\FileUpload::make('image_avant')
-                 ->required()
-                ->maxSize(500)
+                ->required()
+                ->maxSize(size: 3000)
                 ->label('Image')
                 ->directory('services'),
                 Forms\Components\Textarea::make('contenu')

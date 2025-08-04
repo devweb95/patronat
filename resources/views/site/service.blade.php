@@ -60,21 +60,21 @@
 				<h3>Nous œuvrons au quotidien pour défendre les intérêts du secteur privé, favoriser le dialogue public-privé  <br> et promouvoir <span>un environnement des affaires sain et équitable.</span></h3>
 			</div>
 			<div class="row clearfix">
-				@foreach ($services as $service )
+				@foreach ($services as $servi )
 
 				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12" >
 					<div class="inner-box">
 						<div class="icon-box">
 							<span class="icon flaticon-internet"></span>
 						</div>
-						<h3>{{$service->titre}}</h3>
-						<div class="text" style="height: 150px ; background-size: cover; background-position: center;">{{$service->contenu}}</div>
-						<div class="overlay-box" style="background-image: url({{ asset('images/service/formation.jpg') }}) ">
+						<h3>{{$servi->titre}}</h3>
+						<div class="text" style="height: 150px ; background-size: cover; background-position: center;">{{$servi->contenu}}</div>
+						<div class="overlay-box" style="background-image: url({{ asset('storage/'. $servi->image_avant) }}) ">
 							<div class="overlay-inner">
 								<div class="content">
 									<span class="icon flaticon-internet"></span>
-									<h4><a href="#">{{$service->titre}}</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
+									<h4><a href="{{ route('service.show', $servi->id) }}">{{$servi->titre}}</a></h4>
+									<a href="{{ route('service.show', $servi->id) }}" class="theme-btn btn-style-one">consulter</a>
 								</div>
 							</div>
 						</div>
@@ -82,162 +82,7 @@
 				</div>
 				@endforeach
 				<!-- Services Block Two -->
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12" >
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-internet"></span>
-						</div>
-						<h3>Formation</h3>
-						<div class="text" style="height: 150px ; background-size: cover; background-position: center;">Organisation de sessions de renforcement de capacités pour améliorer les compétences techniques et managériales des acteurs du secteur privé.</div>
-						<div class="overlay-box" style="background-image: url({{ asset('images/service/formation.jpg') }}) ">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-internet"></span>
-									<h4><a href="#">Formation</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				
-				<!-- Services Block Two -->
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-museum"></span>
-						</div>
-						<h3>Représentation</h3>
-						<div class="text" style="height: 150px">Défense des intérêts du secteur privé auprès des autorités publiques, des partenaires techniques et financiers, et dans les instances nationales et internationales.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/representation.jpg')}});background-size: cover; background-position: center;">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-museum"></span>
-									<h4><a href="#">Représentation</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-gun"></span>
-						</div>
-						<h3>Réalisation d'études et d'enquêtes</h3>
-						<div class="text" style="height: 120px;background-size: cover; background-position: center;">Conception et mise en œuvre d'études économiques, sectorielles ou sociales pour orienter les stratégies du secteur privé.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/etude.jpg')}});">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-gun"></span>
-									<h4><a href="#">Réalisation d'études et d'enquêtes</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-plan"></span>
-						</div>
-						<h3>Assistance, conseil et orientation des membres</h3>
-						<div class="text" style="height: 120px ;background-size: cover; background-position: center">Appui personnalisé aux entreprises membres en matière de gestion, fiscalité, droit du travail, démarches administratives.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/assistance.jpg')}})">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-plan"></span>
-									<h4><a href="#">Assistance, conseil et orientation des membres</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-book"></span>
-						</div>
-						<h3>Recherche de financements et de partenariats</h3>
-						<div class="text" style="height: 100px;background-size: cover; background-position: center;">Soutien à l'identification d'opportunités de financement et de collaboration avec des partenaires techniques ou financiers.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/financement2.jpg')}});">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-book"></span>
-									<h4><a href="#">Recherche de financements et de partenariats</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Services Block Two -->
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-house-outline"></span>
-						</div>
-						<h3>Lobbying et plaidoyer</h3>
-						<div class="text" style="height: 150px;background-size: cover; background-position: center;">Actions d'influence pour faire évoluer les politiques publiques en faveur d'un environnement des affaires plus favorable.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/plaidoyer.jpg')}});">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-house-outline"></span>
-									<h4><a href="#">Lobbying et plaidoyer</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-house-outline"></span>
-						</div>
-						<h3>Médiation</h3>
-						<div class="text" style="height: 150px ;background-size: cover; background-position: center">Intervention dans la résolution amiable des différends entre acteurs économiques ou entre entreprises et administrations.</div>
-						<div class="overlay-box" style="background-image: url({{asset('images/service/mediation.jpg')}});background-size: cover; background-position: center;">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-house-outline"></span>
-									<h4><a href="#">Médiation</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="services-block-two style-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box">
-							<span class="icon flaticon-house-outline"></span>
-						</div>
-						<h3>Négociation collective</h3>
-						<div class="text" style="height: 150px ;background-size: cover; background-position: center">Participation active à la concertation sociale et à la négociation d'accords collectifs au profit des entreprises et des salariés.</div>
-						<div class="overlay-box" sstyle="background-image: url({{asset('images/service/collective.jpg')}});background-size: cover; background-position: center;">
-							<div class="overlay-inner">
-								<div class="content">
-									<span class="icon flaticon-house-outline"></span>
-									<h4><a href="#">Négociation collective</a></h4>
-									<a href="#" class="theme-btn btn-style-one">consulter</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				
 			</div>
 		

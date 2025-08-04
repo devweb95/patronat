@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'PATRONAT | Homepage')
+@section('title', 'PATRONAT | Accueil')
 
 @section('content')
 
@@ -322,9 +322,8 @@
                                 </div>
                             </div>
                         </div> -->
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
+                        @foreach ($service as $servi)
+						 <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                                 <div class="border-one"></div>
                                 <div class="border-two"></div>
@@ -332,116 +331,13 @@
                                     <div class="icon-box">
                                         <span class="icon fa fa-suitcase"></span>
                                     </div>
-                                    <h6><a href="#">Formation</a></h6>
-                                    <div class="text">Organisation de sessions de renforcement de capacités pour améliorer les compétences techniques et managériales des acteurs du secteur privé.</div>
+                                    <h6><a href="{{route('accueilservice.show',$servi->id)}}">{{$servi->titre}}</a></h6>
+                                    <div class="text">{{ $servi->contenu }}</div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-area-chart"></span>
-                                    </div>
-                                    <h6><a href="#">Représentation</a></h6>
-                                    <div class="text">Défense des intérêts du secteur privé auprès des autorités publiques, des partenaires techniques et financiers, et dans les instances nationales et internationales.</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-coffee"></span>
-                                    </div>
-                                    <h6><a href="#">Réalisation d'études et d'enquêtes</a></h6>
-                                    <div class="text">Conception et mise en œuvre d'études économiques, sectorielles ou sociales pour orienter les stratégies du secteur privé.</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-building"></span>
-                                    </div>
-                                    <h6><a href="#">Assistance, conseil et orientation des membres</a></h6>
-                                    <div class="text">Appui personnalisé aux entreprises membres en matière de gestion, fiscalité, droit du travail, démarches administratives.</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-pie-chart"></span>
-                                    </div>
-                                    <h6><a href="#">Recherche de financements et de partenariats</a></h6>
-                                    <div class="text">Soutien à l'identification d'opportunités de financement et de collaboration avec des partenaires techniques ou financiers.</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-handshake-o"></span>
-                                    </div>
-                                    <h6><a href="#">Lobbying et plaidoyer</a></h6>
-                                    <div class="text">Actions d'influence pour faire évoluer les politiques publiques en faveur d'un environnement des affaires plus favorable.</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-balance-scale"></span>
-                                    </div>
-                                    <h6><a href="#">Médiation</a></h6>
-                                    <div class="text">Intervention dans la résolution amiable des différends entre acteurs économiques ou entre entreprises et administrations.</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Services Block -->
-                        <div class="services-block-three col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="border-one"></div>
-                                <div class="border-two"></div>
-                                <div class="content">
-                                    <div class="icon-box">
-                                        <span class="icon fa fa-users"></span>
-                                    </div>
-                                    <h6><a href="#">Négociation collective</a></h6>
-                                    <div class="text">Participation active à la concertation sociale et à la négociation d'accords collectifs au profit des entreprises et des salariés.</div>
-                                </div>
-                            </div>
-                        </div>
+						@endforeach
+                       
                         
                     </div>
                 </div>
@@ -715,66 +611,31 @@
 			</div>
 			
 			<div class="row clearfix">
-				
-				<!-- News Block -->
+				@foreach ($actualites as $actuel)
 				<div class="news-block col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="image">
-							<img src="{{ asset('images/blog/blog3.jpeg') }}" alt="" />
+							<img src="{{ asset('storage/'. $actuel->image_avant) }}" alt="" />
 							<div class="overlay-box">
-								<a href="{{ asset('images/blog/blog3.jpeg') }}" data-fancybox="news" data-caption="" class="plus flaticon-plus"></a>
+								<a href="{{ asset('storage/'. $actuel->image_avant) }}" data-fancybox="news" data-caption="" class="plus flaticon-plus"></a>
 							</div>
 						</div>
 						<div class="lower-content">
 							<ul class="post-meta">
-								<li><span class="fa fa-calendar"></span> 30 mai 2025</li>
-								<li><span class="fa fa-user"></span>Admin</li>
+								<li><span class="fa fa-calendar"></span> {{$actuel->date_de_publication}}</li>
+								<li><span class="fa fa-user"></span>{{$actuel->user->name}}</li>
 							</ul>
-							<h5><a href="#">FORUM SUR LE SECTEUR PRIVE AU BURKINA FASO : UN RENDEZ-VOUS DE REFLEXION  TRIPARTITE AUTOUR DU THEME « CONSTRUIRE DES VOIES DURABLES ET INCLUSIVES POUR LE DEVELOPPEMENT ».</a></h5>
-							<a href="#" class="theme-btn btn-style-two">Voir plus</a>
+							<h5><a href="{{route('actualite.show',$actuel->id)}}">{{$actuel->titre}}</a></h5>
+							<a href="{{route('actualite.show' ,$actuel->id)}}" class="theme-btn btn-style-two">Voir plus</a>
 						</div>
 					</div>
 				</div>
+				@endforeach
+				<!-- News Block -->
+				
 				
 				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ asset('images/blog/blog2.jpeg') }}" alt="" />
-							<div class="overlay-box">
-								<a href="{{ asset('images/blog/blog2.jpeg') }}" data-fancybox="news" data-caption="" class="plus flaticon-plus"></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li><span class="fa fa-calendar"></span> 13 mai 2025</li>
-								<li><span class="fa fa-user"></span>Admin</li>
-							</ul>
-							<h5><a href="#">Séance de travail entre la Confédération Générale des Entreprises du Faso (COGEF) et la Banque Ouest Africaine de Développement (BOAD)</a></h5>
-							<a href="#" class="theme-btn btn-style-two">Voir plus</a>
-						</div>
-					</div>
-				</div>
 				
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ asset('images/blog/blog1.jpeg') }}" alt="" />
-							<div class="overlay-box">
-								<a href="{{ asset('images/blog/blog1.jpeg') }}" data-fancybox="news" data-caption="" class="plus flaticon-plus"></a>
-							</div>
-						</div>
-						<div class="lower-content">
-							<ul class="post-meta">
-								<li><span class="fa fa-calendar"></span> 13 mai 2025</li>
-								<li><span class="fa fa-user"></span>Admin</li>
-							</ul>
-							<h5><a href="#">M. Idrissa NASSA, CEO DE L’ANNEE</a></h5>
-							<a href="#" class="theme-btn btn-style-two">Voir plus</a>
-						</div>
-					</div>
-				</div>
 				
 			</div>
 		</div>
@@ -867,14 +728,14 @@
 									<!-- Column -->
 									<div class="column col-lg-6 col-md-6 col-sm-12">
 										<ul class="list-style-two style-two">
-											<li><span class="icon flaticon-placeholder-1"></span>Av. Kwame Nkrumah, Koulouba, 01 BP 1482 Ouagadougou 01, Ouagadougou, Burkina Faso</li>
+											<li><span class="icon flaticon-placeholder-1"></span>{{$infos->adresse}}</li>
 										</ul>
 									</div>
 									<!-- Column -->
 									<div class="column col-lg-6 col-md-6 col-sm-12">
 										<ul class="list-style-two style-two">
-											<li><span class="icon flaticon-phone-call"></span>(+226) 25 33 03 09</li>
-											<li><span class="icon flaticon-chat"></span>contact@patronat.bf</li>
+											<li><span class="icon flaticon-phone-call"></span>{{$infos->numero}}</li>
+											<li><span class="icon flaticon-chat"></span>{{$infos->email}}</li>
 										</ul>
 									</div>
 								</div>

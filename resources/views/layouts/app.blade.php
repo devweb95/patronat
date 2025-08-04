@@ -9,8 +9,8 @@
     <title>@yield('title', 'LawSight Law')</title>
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/logoheader.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('images/logoheader.png')}}" type="image/x-icon">
     
     <!-- CSS Files -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
